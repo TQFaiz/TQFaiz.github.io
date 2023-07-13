@@ -27,6 +27,10 @@ let renderProductDetails = () => {
                             <i class="bi bi-star-fill"></i>
                         </div>
                     </div>
+                    
+                    <img src="${product.extraimages}" alt="" class="">
+                   
+                    <button class="btn btn-dark add-cart" onclick="addToCart(${product.id})">Add to cart <i class="bi bi-cart-plus"></i></button>
                 </div>
     `
 }

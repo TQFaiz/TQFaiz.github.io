@@ -10,13 +10,10 @@
 
 <body>
     <header>
-        <nav class="navbar nav navbar-expand-lg bg-primary bg-opacity-25">
-            <div class="container">
-
-                <a href="index.html" class="navbar-brand"><img src="baglogo.png" alt="Logo" width="150"
-                        height="60"></a>
-            </div>
-        </nav>
+        <div class="nav container">
+            <a href="index.html" class="logo">Ecommerce</a>
+        </div>
+        
     </header>
 
 
@@ -24,7 +21,8 @@
 
 
 
-    <div class="bg">
+    <div class="bg " >
+        
         <div class="form-box">
             <div class="button-box">
                 <div id="btn"></div>
@@ -36,22 +34,41 @@
             <form id="login" class="input-group">
                 <input type="email" placeholder="Email" class="input-field" required>
                 <input type="password" placeholder="Password" class="input-field" required>
-                <button class="submit-btn" type="submit" href="index.html">Log in</button>
+                <a class="submit-btn" role="button" href="index.html">Log in</a>
             </form>
             <form id="signup" class="input-group">
                 <input type="text" placeholder="Username" class="input-field" required>
                 <input type="email" placeholder="Email" class="input-field" required>
                 <input type="password" placeholder="Password" class="input-field" required>
-                <button class="submit-btn" type="submit" href="index.html">Register</button>
+                <a class="submit-btn" role="button" href="index.html">Register</a>
             </form>
         </div>
+        <h1 class="bg-text">Login/Sign Up</h1>
     </div>
+    
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
-    <script src="signuplogin.js"></script>
+    <script> 
+    var log=document.getElementById("login");
+        var sign=document.getElementById("signup");
+        var btun=document.getElementById("btn");
+       
+        function signup(){
+           log.style.left="-400px";
+           sign.style.left="50px";
+           btun.style.left="110px";
+       }
+       
+       function login(){
+           log.style.left="50px";
+           sign.style.left="400px";
+           btun.style.left="0px";
+       }
+       
+       </script>
 </body>
 
 </html>
